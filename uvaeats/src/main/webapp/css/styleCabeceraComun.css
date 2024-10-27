@@ -1,0 +1,91 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: teal;
+  align-items: center;
+  max-width: 100%;
+  max-height: 20%;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+ 
+#botones {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 4%;
+  margin-bottom: 4%;
+}
+
+.sup-derecha {
+  display: flex;
+  align-items: center;
+}
+  
+.sup-derecha p {
+  margin-right: 20;
+  color: black;
+  font-weight: bolder;
+}
+  
+.perfil {
+  position: relative;
+  display: inline-block;
+  margin-right: 70px;
+}
+  
+.imgPerfil {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+}
+ 
+.boton2  {
+  color: black;
+  background-color: #dbe9e9;  
+  font-size: 16px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  cursor: pointer;
+  width: 160px;
+  text-align: left;
+}
+  
+.boton2:hover {
+  background-color:#6ea9a8;
+}
+
+  
+.perfil:hover .contenido {
+  display: block;
+}
+
+.sup-izquierda {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sup-izquierda img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+#inicio{
+  color:black;
+  font-weight: bolder;
+  margin-left: 110px;
+}
+
+#inicio:hover{
+  color: white;
+}
+

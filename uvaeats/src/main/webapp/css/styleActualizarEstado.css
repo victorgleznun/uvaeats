@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../imagenes/hamburguesas.jpg') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: teal;
+  align-items: center;
+  max-width: 100%;
+  max-height: 20%;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+ 
+#botones {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 4%;
+  margin-bottom: 4%;
+}
+
+.sup-derecha {
+  display: flex;
+  align-items: center;
+}
+  
+.perfil {
+  position: relative;
+  display: inline-block;
+  margin-right: 70px;
+}
+  
+.imgPerfil {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+}
+ 
+.boton2  {
+  color: black;
+  background-color: #dbe9e9;  
+  font-size: 16px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  cursor: pointer;
+  width: 160px;
+  text-align: left;
+}
+  
+.boton2:hover {
+  background-color:#6ea9a8;
+}
+  
+.perfil:hover .contenido {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sup-izquierda{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sup-izquierda img {
+  width: 100px;
+  height: auto;
+}
+
+#inicio{
+  color:black;
+  font-weight: bolder;
+  margin-left: 110px;
+}
+
+.centro h1 {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 2em;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.contenido {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.campo label, .campo select {
+    width: 60%;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#datosPedido{
+    width:60%;
+    font-size: 18px;
+    margin-right: 10px;
+    resize: horizontal;
+    font-family: Arial, sans-serif;
+}
+
+.centro {
+    background-color: #6ea9a8;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    border-radius: 20px;
+    border-color: black;
+    border: 2px solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    justify-content: space-around;
+    opacity: 0;
+    transform: translateY(0px);
+    animation: fade-in 1s;
+    animation-fill-mode: forwards;
+    width: 50%;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(40);
+    }
+}
+
+.boton-cancelar, .boton-actualizar {
+    background-color: #ff7f7f;
+    font-weight: bolder;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+.boton-cancelar:hover, .boton-actualizar:hover {
+    background-color: #da5f61;
+}

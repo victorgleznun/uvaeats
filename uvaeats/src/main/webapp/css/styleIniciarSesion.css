@@ -1,0 +1,122 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    background-image: url('../imagenes/campus.jpg');
+    background-size: 100%;
+}
+
+header {    
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    max-height: 20%;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.contenedor {
+    position: relative;
+    left: 37%;
+    width: 400px;
+    background-color: #6ea9a8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 2px solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    transform: translateY(0px);
+    animation: fade-in 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(40);
+    }
+}
+
+
+input {
+    background-color: #dbe9e9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 94%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.ini{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ff7f7f;
+    border-radius: 3px;
+    color: black;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+.ini:hover {
+    background-color: #da5f61;
+}
+
+button {
+    font-weight: bolder;
+}
+
+.reg{
+    width: 100%;
+    padding: 10px;
+    background-color: #ff7f7f;
+    border-radius: 3px;
+    color: black;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+.reg:hover {
+    background-color: #da5f61;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+label[for="error"] {
+    color: red;
+    font-family: Arial, sans-serif;
+}

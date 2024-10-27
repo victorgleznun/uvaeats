@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1vw; /* Ajuste con vw para que se redimensione */
+    margin: 0;
+    padding: 0;
+    background: url('../imagenes/hamburguesas.jpg') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: black;
+    margin-left: 6%; /* Cambiado a % para redimensionar */
+}
+
+h1:hover {
+    color: #dbe9e9;
+}
+
+.contenido {
+    display: none;
+    position: absolute;
+    min-width: 10%; /* Cambiado a % para redimensionar */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.contenido a {
+    color: black;
+    background-color: #dbe9e9;
+    padding: 1.2% 1.6%; /* Cambiado a % para redimensionar */
+    text-decoration: none;
+    display: block;
+}
+
+.contenido a:hover {
+    background-color: #6ea9a8;
+}
+
+.centro {
+    width: 30%; /* Cambiado a % para redimensionar */
+    background-color: #6ea9a8;
+    padding: 2%; /* Cambiado a % para redimensionar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    border-radius: 20px;
+    border-color: black;
+    border: 2px solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(0px);
+    animation: fade-in 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(40);
+    }
+}
+
+select {
+    background-color: #dbe9e9;
+    font-weight: bolder;
+    width: 100%;
+    padding: 1%; /* Cambiado a % para redimensionar */
+    margin-bottom: 2%; /* Cambiado a % para redimensionar */
+}
+
+label {
+    display: block;
+    margin-bottom: 2%; /* Cambiado a % para redimensionar */
+}
+
+select {
+    width: 100%;
+    padding: 1%; /* Cambiado a % para redimensionar */
+    margin-bottom: 2%; /* Cambiado a % para redimensionar */
+}
+
+.pedido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pedido img {
+    width: 20%; /* Cambiado a % para redimensionar */
+    height: auto;
+    margin-right: 5%; /* Cambiado a % para redimensionar */
+    margin-left: 5%; /* Cambiado a % para redimensionar */
+}
+
+.boton-pedido {
+    background-color: #ff7f7f;
+    font-weight: bolder;
+    padding: 1% 2%; /* Cambiado a % para redimensionar */
+    text-align: center;
+    display: inline-block;
+    font-size: 1vw; /* Ajuste con vw para que se redimensione */
+    margin: 0.4% 0.2%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+.boton-pedido:hover {
+    background-color: #da5f61;
+}
+
+#facultad {
+    margin-bottom: 8%; /* Cambiado a % para redimensionar */
+}
+
+#cafeteria {
+    margin-bottom: 8%; /* Cambiado a % para redimensionar */
+}
+
+a {
+    text-decoration: none;
+}
+
+#error{
+    font-family: Arial, sans-serif;
+    color:red;
+}
