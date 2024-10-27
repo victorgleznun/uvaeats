@@ -1,5 +1,7 @@
 <h1 align="center">🌯UvaEats🍱​</h1>
 
+## Description 🍔
+
 **UvaEats** is a web application for managing food orders, developed using Apache NetBeans, Apache Tomcat, and programming languages including Java, HTML, CSS, and JavaScript. UvaEats allows users to browse restaurant menus, place orders online, and manage their purchases through an intuitive and user-friendly platform, providing a seamless experience for both customers and restaurant partners.
 
 ## Features ✨​
